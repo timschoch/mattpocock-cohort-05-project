@@ -11,6 +11,7 @@ Do these checks in this order before you report a change to `app/` as complete:
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | 401 "Select a user from the DevUI panel"        | No user in the session — switch users and country in the floating panel (`app/components/dev-ui.tsx`). |
 | `tsc` reports every `./+types/*` import missing | Typegen has not run. Use `npm run typecheck`, which runs `react-router typegen` first.                 |
+| `command not found`, no `.env` or no `data.db`  | Fresh worktree. Run `scripts/worktree-setup.sh`.                                                       |
 
 ## Agent skills
 
